@@ -30,43 +30,60 @@
 
     <!-- Main Content -->
     <main>
+
         <!-- Section 1 -->
-        <section class="hero">
+        <section id="hero">
             <div id="hero-text">
+                <!-- Hero element (rocket image with h2 text overlay)-->
                 <h2>Welcome</h2>
             </div>
         </section>
+
         <!-- Section 2 -->
         <section>
-            <div class="blue-background">
+            <div>
+                <!-- Who are we -->
                 <span>
-                    <h3>Who are we</h3>
-                    <p class="light-grey">Welcome to the Moon Landing Museum! On July 20th 1969 Neil Armstrong took
+                    <h3 class="center-align">Who are we</h3>
+                    <p>Welcome to the Moon Landing Museum! On July 20th 1969 Neil Armstrong took
                         man’s
                         first steps on the
                         Moon, it was an historic event which captivated the world. Here at the museum we showcase all
                         things
                         Apollo 11</p>
                 </span>
+                <span>
+                    <!-- img of astronaut for who are we -->
+                    <img src="assets/img/Neil-Armstrong-moon.png" alt="picture of Neil Armstrong on the Lunar surface"
+                        class="blue-image" id="blue-image-alignment">
+                </span>
             </div>
             <div>
-                <img src="assets/img/Screenshot 2024-06-07 162658.jpg.png" alt="" class="artifacts image-border">
+                <!-- Whats here -->
+                <span>
+                    <h3 class="center-align">What's Here</h3>
+                    <ul id="what-text what">
+                        <li>Over 20 one of a kind artifacts</li>
+                        <li>Dozens of NASA and Russian Spaceflight Additions</li>
+                        <li>The Actual Apollo 11 command module Columbia AND the Lunar Landing Pod, The Eagle</li>
+                    </ul>
+                </span>
+                <span>
+                    <!-- 2 x images for artifacts -->
+                    <img src="assets/img/columbia.jpg" alt="picture of the columbia module"
+                        class="welcome-images red-image" id="red-image-alignment"> <img
+                        src="assets/img/lunar-surface-capsule.jpg" alt="picture of the Lunar surface capsule The Eagle"
+                        class="welcome-images orange-image" id="orange-image-alignment">
+                </span>
             </div>
+        </section>
+
+        <section>
+            <!-- Section 3 -->
             <div>
-                <h3>What's Here</h3>
-                <ul>
-                    <li>Over 20 one of a kind artifacts</li>
-                    <li>Dozens of NASA and Russian Spaceflight Additions</li>
-                    <li>The Actual Apollo 11 command module Columbia AND the Lunar Landing Pod, The Eagle</li>
-                </ul>
-            </div>
-            <div>
-                <img src="assets/img/Screenshot 2024-06-07 205527.jpg " alt="" class="artifacts green-border"><img
-                    src="assets/img/mark-konig-IwRPMHU1PpE-unsplash.jpg" alt="" class="artifacts yellow-border">
-            </div>
-            <div>
-                <h3>Our Website</h3>
-                <p class="light-grey">So come and join us or take a tour round our website where we’ll take you through
+                <!-- Our Website -->
+                <h3 class="center-align">Our Website</h3>
+                <p>Take a tour round our website where we’ll take you through
                     the Timeline of the
                     Mission and introduce you to the three men whose names have gone down in history; astronauts Neil
                     Armstrong, Buzz Aldrin and Michael Collins. Our Visit us Page located at the bottom will give you
@@ -74,45 +91,13 @@
                     any Apollo 11 enthusiasts out there who are interested in volunteering with us, take a look at the
                     Volunteering page where you can register your interest.</p>
             </div>
-            <div>
-                <!-- Another Img -->
-            </div>
-        </section>
-        <!-- Section 3 -->
-        <section>
-            <div>
-                <h3>Opening Times</h3>
-                <div id="table">
-                    <table>
-                        <tr>
-                            <th>Monday</th>
-                            <th>Tuesday</th>
-                            <th>Wednesday</th>
-                            <th>Thursday</th>
-                            <th>Friday</th>
-                            <th>Saturday</th>
-                            <th>Sunday</th>
-                        </tr>
-                        <tr>
-                            <td>8:00 - 22:00</td>
-                            <td>8:00 - 22:00</td>
-                            <td>8:00 - 16:00</td>
-                            <td>8:00 - 22:00</td>
-                            <td>8:00 - 22:00</td>
-                            <td>9:00 - 10:00</td>
-                            <td>9:00 - 16:00</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-            <!-- table with the opening times -->
         </section>
     </main>
 
     <!-- Footer -->
     <footer>
         <div>
-            <ul id=" social-media-links">
+            <ul id="social-media-links">
                 <li><a href="https://www.facebook.com" target="_blank" rel="noopener"
                         aria-label="Visit our Facebook Page (opens in a new tab)"><i
                             class="fa-brands fa-facebook-f"></i></a></li>

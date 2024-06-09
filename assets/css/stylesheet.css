@@ -20,7 +20,7 @@ body {
 header {
     background-color: darkgrey;
     position: fixed;
-    padding: 0, 0, 0, 3%;
+    padding-left: 3%;
     box-shadow: 0 2px 2px darkgray;
     width: 100%;
     display: flex;
@@ -81,6 +81,7 @@ nav {
 
 .nav-toggle-lable {
     font-size: 2rem;
+    padding-right: 3%;
 }
 
 
@@ -94,87 +95,122 @@ nav a {
 
 /* Main Content styles */
 main {
-    /*background-color: whitesmoke;*/
+    background-color: white;
     flex: 1 0 auto;
     margin-top: 68px;
 }
 
-.hero {
+/* Hero styling */
+#hero {
+    background-image: url(../img/rocket.jpg);
     width: 100%;
     height: 200px;
-    background-image: url(../img/rocket.jpg);
     background-position: center;
-    /*background-repeat: no-repeat;*/
     background-size: cover;
     position: relative;
 }
 
 #hero-text {
     position: absolute;
-    color: black;
     bottom: 1rem;
     right: 1rem;
-    background-color: rgba(134, 238, 233, 0.6);
-    /*background-color: rgba(128, 186, 240, 0.6);*/
-
-
-    /*font-size: 200%;
-    font-family: 'Josefin-Sans', sans-serif;*/
-
+    background-color: rgba(255, 95, 0, 0.6);
+    /*background-color: rgba(134, 243, 238, 0.6);*/
 }
 
-
+/* main content styling */
 h2 {
-
-    /*padding-left: 3%;*/
-    font-size: 350%;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 300%;
     letter-spacing: 3px;
-    color: darkred;
-
+    color: darkblue;
+    font-weight: 300;
 }
 
 h3 {
     font-family: 'Rajdhani', sans-serif;
+    font-size: 150%;
+    text-decoration: underline overline;
 }
 
-.first-paragraph {
-    float: left;
-    width: 50%;
-    padding: 5px;
+.center-align {
+    padding-left: 130px;
+    margin-top: 0.5rem;
 }
 
-.artifacts {
-    width: 60%;
-    height: 60%;
+p {
+    font-family: 'Raleway', sans-serif;
+    padding-left: 2%;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#whats-here-list {
+    font-family: 'Raleway', sans-serif;
+    padding-left: 6%;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    list-style-type: disc;
+}
+
+.welcome-images {
+    width: 70%;
+    height: 70%;
     position: relative;
+    padding-left: 5rem;
     border-radius: 20%;
 }
 
-.blue-background {
-    background-color: rgba(0, 0, 225, 0.5);
+.blue-image {
+    position: relative;
+    border-radius: 20%;
+    border: 10px solid rgb(0, 0, 139);
+    padding: 3px;
 }
 
-.image-border {
-    border: 10px solid blue;
-    padding: 2px;
+#blue-image-alignment {
+    left: 7rem;
+    width: 60%;
+    height: 60%;
 }
 
-.green-border {
-    border: 10px solid cyan;
-    padding: 2px;
+.red-image {
+    position: relative;
+    border-radius: 20%;
+    border: 10px solid rgb(139, 0, 0);
+    padding: 3px;
 }
 
-.yellow-border {
-    border: 10px solid purple;
-    padding: 2px;
+#red-image-alignment {
+    left: 1rem;
+    width: 60%;
+    height: 60%;
 }
 
-#table {
-    border: 5px solid red;
+.orange-image {
+    position: relative;
+    border-radius: 20%;
+    border: 10px solid rgb(255, 95, 0);
+    padding: 3px;
 }
 
-table {
-    font-size: x-small;
+#orange-image-alignment {
+    left: 7rem;
+    width: 60%;
+    height: 60%;
+}
+
+h4 {
+    font-size: 130%;
+}
+
+.black-background {
+    background-color: black;
+    color: white;
+}
+
+.yellow-background {
+    background-color: rgb(246, 190, 0);
 }
 
 /* Footer styles */
@@ -209,27 +245,16 @@ h4 {
     /*font-size: larger;*/
 }
 
-/* styling for smaller screens */
-
-@media screen and (max-width: 767px) {
-    .first-paragraph {
-        width: 100%;
-    }
-}
 
 /* styling for larger screens */
 @media screen and (min-width: 768px) {
 
     /* Header */
-
-    header {
-        padding right: 0;
-    }
-
     nav {
         display: block;
         position: relative;
         width: fit-content;
+        padding-right: 2%;
     }
 
     #main-menu {
@@ -244,20 +269,6 @@ h4 {
 
     main {
         margin-top: 80px;
-    }
-
-    /*.moon {
-        height: 50%;
-        width: 50%;
-    }*/
-
-    #first-paragraph {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .light-grey {
-        font-size: 150%;
     }
 
     /* footer */
@@ -284,9 +295,6 @@ h4 {
         margin-top: 85px;
     }
 
-    .light-grey {
-        font-size: 400%;
-    }
 
     /* footer */
 
