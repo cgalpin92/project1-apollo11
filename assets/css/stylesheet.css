@@ -20,7 +20,7 @@ body {
 header {
     background-color: darkgrey;
     position: fixed;
-    padding: 0 3%;
+    padding: 0, 0, 0, 3%;
     box-shadow: 0 2px 2px darkgray;
     width: 100%;
     display: flex;
@@ -104,7 +104,7 @@ main {
     height: 200px;
     background-image: url(../img/rocket.jpg);
     background-position: center;
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;*/
     background-size: cover;
     position: relative;
 }
@@ -112,31 +112,29 @@ main {
 #hero-text {
     position: absolute;
     color: black;
-    bottom: 10%;
-    left: 15%;
-    background-color: rgba(128, 186, 240, 0.6);
+    bottom: 1rem;
+    right: 1rem;
+    background-color: rgba(134, 238, 233, 0.6);
+    /*background-color: rgba(128, 186, 240, 0.6);*/
+
 
     /*font-size: 200%;
     font-family: 'Josefin-Sans', sans-serif;*/
 
 }
 
-.moon {
-    width: 100%;
-    position: relative;
-}
 
 h2 {
-    padding-top: 4%;
-    padding-left: 3%;
 
-    font-size: 400%;
+    /*padding-left: 3%;*/
+    font-size: 350%;
     letter-spacing: 3px;
     color: darkred;
+
 }
 
-.light-grey {
-    background-color: lightgrey;
+h3 {
+    font-family: 'Rajdhani', sans-serif;
 }
 
 .first-paragraph {
@@ -146,8 +144,37 @@ h2 {
 }
 
 .artifacts {
-    width: 100%;
+    width: 60%;
+    height: 60%;
     position: relative;
+    border-radius: 20%;
+}
+
+.blue-background {
+    background-color: rgba(0, 0, 225, 0.5);
+}
+
+.image-border {
+    border: 10px solid blue;
+    padding: 2px;
+}
+
+.green-border {
+    border: 10px solid cyan;
+    padding: 2px;
+}
+
+.yellow-border {
+    border: 10px solid purple;
+    padding: 2px;
+}
+
+#table {
+    border: 5px solid red;
+}
+
+table {
+    font-size: x-small;
 }
 
 /* Footer styles */
@@ -194,11 +221,15 @@ h4 {
 @media screen and (min-width: 768px) {
 
     /* Header */
+
+    header {
+        padding right: 0;
+    }
+
     nav {
         display: block;
         position: relative;
         width: fit-content;
-        padding-right: 2%;
     }
 
     #main-menu {
